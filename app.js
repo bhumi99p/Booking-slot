@@ -17,7 +17,7 @@ const session=require("express-session");
 const User=require("./models/user");
 const MongoDBStore=require("connect-mongodb-session")(session);
 
-const MONGODB_URI= "mongodb+srv://karankc27:Bipolar@cluster0.nqxcw.mongodb.net/test";
+const MONGODB_URI= "database url";
 const store=new MongoDBStore({
   uri: MONGODB_URI,
   collection: 'sessions'
